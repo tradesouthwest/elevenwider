@@ -1,0 +1,226 @@
+/*
+Theme Name: ElevenWider
+Theme URI: https://themes.tradesouthwest.com/wordpress/
+Author: Larry Judd @tradesouthwest
+Author URI: https://tradesouthwest.com/
+Description: The 2011 theme for WordPress is nice but it could be wider for most modern browsers. 
+11wider is your solution for a theme that uses the 2011 unique settings and can look great in a wider style 
+as well as give you more room for what really counts: content. This child theme adds 
+secondary menu at very top of header; background for active menu items; dropdown icon for menu 
+items with children; add Google font to theme; a smaller heading above the image header; centers featured image for showcase 
+template; customizer options for footer text and back to top button and a few other benefits like 
+mobile friendly and additional sidebar options. 
+Template:             twentyeleven
+Version:              1.0.1
+Tested up to:         5.9.1
+Requires PHP:         5.2.4
+ClassicPress support: 1.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, footer-widgets, full-width-template, microformats, post-formats, sticky-post, theme-options, translation-ready, ClassicPress
+Text Domain: elevenwider
+*/
+.clearfix:before,.clearfix:after{
+	content: "";
+	display: table
+}
+.clearfix:after{
+	clear: both
+}
+.clearfix{
+	*zoom: 1
+}
+body{
+	font-family: "Raleway","Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#page{
+	width:            100%;
+	background-color: #fcfcfc
+}
+body.one-column #page{
+	max-width: 768px;
+	width:     98.8992%;
+	font-size: larger;
+}
+.one-column #branding #searchform{
+	top: 0;
+}
+.singular .entry-meta .edit-link a{
+	top:      0;
+	position: relative;
+}
+.entry-content{
+	min-width: inherit;
+}
+.primary-single{
+	width:  90%;
+	margin: 1em auto;
+}
+.primary-single #secondary{
+	width: 90%;
+	float: none;
+}
+.primary-single #secondary aside.widget{
+	float:         left;
+	width:         100%;
+	border-bottom: thin solid #ccc;
+}
+
+@media screen and (min-width: 900px){
+	#page{
+		max-width: 90%;	
+	}
+	.primary-single #secondary aside.widget #searchform input{
+		max-width:320px;
+	}
+	body.one-column #page{
+		max-width: 980px;
+		width:     90%;
+		font-size: initial;
+	}
+}
+#site-description{
+	margin-bottom: .5em;
+}
+#site-title,
+.singular.page .hentry{
+	padding-top: .5em;
+}
+#branding #searchform{
+	top: 1.8em;
+}
+
+#branding {
+    border-top: 1px solid #bbb;
+}
+#topbranding {
+	border-top:     1px solid #bbb;
+	padding-bottom: 10px;
+	position:       relative;
+	height:         2.1em;
+	z-index:        9998;
+}
+/* =Menu
+-------------------------------------------------------------- */
+
+.current_page_item{
+	background: rgba(122,122,122,.86);
+	border-left:  1px solid #999;
+	border-right: 1px solid #999;}
+#topaccess a,
+#access a{
+	letter-spacing: 1.036px;
+	color:        #fcfcfc;
+    text-rendering: optimizeLegibility;
+}
+.menu-item-has-children > a:before{
+	content:      "\2193";
+	transform:    rotate(180deg);
+	position:     relative;
+	top:          .222em;
+	left:         100%;
+	padding-left: 1px;
+	color:      #eee;
+	font-weight:  bold;
+} 
+#topaccess {
+	background: #222; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#252525, #0a0a0a);
+	background: -o-linear-gradient(#252525, #0a0a0a);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#252525), to(#0a0a0a)); /* older webkit syntax */
+	background: -webkit-linear-gradient(#252525, #0a0a0a);
+	clear:      both;
+	display:    block;
+	float:      left;
+	margin:     0 auto 6px;
+	width:      100%;
+}
+#topaccess ul {
+	font-size:    13px;
+	list-style:   none;
+	margin:       0 0 0 5.8125em;
+	padding-left: 0;
+}
+#topaccess li {
+	float:    left;
+	position: relative;
+	cursor:   pointer;
+}
+#topaccess a {
+	color:         #eee;
+	display:         block;
+	line-height:     3.333em;
+	padding:         0 1.2125em;
+	text-decoration: none;
+
+}
+#topaccess ul ul {
+	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	display:    none;
+	float:      left;
+	margin:     0;
+	position:   absolute;
+	top:        3.333em;
+	left:       0;
+	width:      188px;
+	z-index:    99999;
+}
+#topaccess ul ul ul {
+	left: 100%;
+	top:  0;
+}
+#topaccess ul ul a {
+	background:  #f9f9f9;
+	border-bottom: 1px dotted #ddd;
+	color:       #444;
+	font-size:     13px;
+	font-weight:   normal;
+	height:        auto;
+	line-height:   1.4em;
+	padding:       10px 10px;
+	width:         168px;
+}
+#topaccess li:hover > a,
+#topaccess ul ul :hover > a,
+#topaccess a:focus {
+	background: #efefef;
+}
+#topaccess li:hover > a,
+#topaccess a:focus {
+	background: #f9f9f9; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -o-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
+	background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
+	background-image: linear-gradient(#f9f9f9, #e5e5e5);
+	color:          #373737;
+}
+#topaccess ul li:hover > ul {
+	display: block;
+}
+#topaccess .current-menu-item > a,
+#topaccess .current-menu-ancestor > a,
+#topaccess .current_page_item > a,
+#topaccess .current_page_ancestor > a {
+	font-weight: bold;
+}
+
+.elevenwider-backtop {
+	float:           right;
+    margin:          -4em 3em 0 1em;
+	text-decoration: underline;
+}
+
+.page-template-showcase .featured-posts{
+	margin: 0 auto 2em;
+}
+/* =Print
+----------------------------------------------- */
+
+@media print {
+	#topaccess {
+		display: none;
+	}
+}
