@@ -5,7 +5,7 @@ Author: Larry Judd @tradesouthwest
 Author URI: https://tradesouthwest.com/
 Description: The 2011 theme for WordPress is nice but it could be wider for most modern browsers. 
 11wider is your solution for a theme that uses the 2011 unique settings and can look great in a wider style 
-as well as give you more room for what really counts: content. This child theme adds 
+as well as give you more room for what really counts: content. This child theme adds new template for header without banner images;  
 secondary menu at very top of header; background for active menu items; dropdown icon for menu 
 items with children; add Google font to theme; a smaller heading above the image header; centers featured image for showcase 
 template; customizer options for footer text and back to top button and a few other benefits like 
@@ -245,15 +245,18 @@ body.one-column #page{
 	width: 75%;
 }
 #respond input#submit{
-    border: 4px solid #eee;
-    border-radius: 5px;
+	border: 4px solid #eee;
+    border-radius: 2px;
     box-shadow: 0 0 1px 1px rgba(204,204,204,0.95);
 }
 
+#respond input#submit:hover{
+    background: #052;
+    box-shadow: 0 0 2px 2px rgba(204,204,204,0.85);
+}
 #respond p {
     margin: 1px 0;
 }
-
 /* =Print
 ----------------------------------------------- */
 
