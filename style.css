@@ -223,26 +223,40 @@ body.one-column #page{
 	padding:       8px;
 	border-radius: 5px;
 	box-shadow:    inset 0 .5px 3px rgba(194,194,194,0.95);
-	background:  #fff;
 	box-sizing:    border-box;
+}
+
+/* =Pages
+----------------------------------------------- */
+.page-template-nobanner-page .entry-content{
+	width: 90%;
+}
+.page-template-nobanner-page.singular footer.entry-meta{
+	border:     none;
+	box-shadow: none;
+}
+.page-template-nobanner-page.singular .entry-title{
+	position: relative;
+	width:    100%;
+	left:     -2.75em;
 }
 
 /* =Forms 
 ----------------------------------------------- */
 #respond input[type="password"], #respond input[type="email"], #respond input[type="url"], #respond input[type="number"] {
-    background: #fff;
-    border: 4px solid #eee;
+    background:  #fff;
+    border:        4px solid #eee;
     -moz-border-radius: 5px;
     border-radius: 5px;
     -webkit-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
     -moz-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
     box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
-    position: relative;
-    padding: 10px;
-    text-indent: 80px;
-	display: block;
-	height: 24px;
-	width: 75%;
+    position:      relative;
+    padding:       10px;
+    text-indent:   80px;
+	display:       block;
+	height:        24px;
+	width:         75%;
 }
 #respond input#submit{
 	border: 4px solid #eee;
@@ -251,12 +265,14 @@ body.one-column #page{
 }
 
 #respond input#submit:hover{
-    background: #052;
-    box-shadow: 0 0 2px 2px rgba(204,204,204,0.85);
+	background: #052;
+	box-shadow: 0 0 2px 2px rgba(204,204,204,0.85);
 }
+
 #respond p {
     margin: 1px 0;
 }
+
 /* =Print
 ----------------------------------------------- */
 
