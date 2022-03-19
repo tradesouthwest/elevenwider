@@ -216,6 +216,44 @@ body.one-column #page{
 .page-template-showcase .featured-posts{
 	margin: 0 auto 2em;
 }
+
+.singular footer.entry-meta{
+	margin-top:    .75em;
+	border:        4px solid #eee;
+	padding:       8px;
+	border-radius: 5px;
+	box-shadow:    inset 0 .5px 3px rgba(194,194,194,0.95);
+	background:  #fff;
+	box-sizing:    border-box;
+}
+
+/* =Forms 
+----------------------------------------------- */
+#respond input[type="password"], #respond input[type="email"], #respond input[type="url"], #respond input[type="number"] {
+    background: #fff;
+    border: 4px solid #eee;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
+    -moz-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
+    box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
+    position: relative;
+    padding: 10px;
+    text-indent: 80px;
+	display: block;
+	height: 24px;
+	width: 75%;
+}
+#respond input#submit{
+    border: 4px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px rgba(204,204,204,0.95);
+}
+
+#respond p {
+    margin: 1px 0;
+}
+
 /* =Print
 ----------------------------------------------- */
 
