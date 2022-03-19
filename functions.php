@@ -196,7 +196,7 @@ function elevenwider_fonts() {
 function elevenwider_fonts_url() {
     $fonts_url = '';
 
-    $Raleway = _x( 'on', 'Raleway font: on or off', 'appeal' );
+    $Raleway = _x( 'on', 'Raleway font: on or off', 'elevenwider' );
 	if ( 'off' !== $Raleway  ) {
 		$font_families = array();
 		if ( 'off' !== $Raleway ) {
