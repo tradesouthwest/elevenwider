@@ -9,7 +9,7 @@ as well as give you more room for what really counts: content. This child theme 
 secondary menu at very top of header; background for active menu items; dropdown icon for menu 
 items with children; add Google font to theme; a smaller heading above the image header; centers featured image for showcase 
 template; customizer options for footer text and back to top button and a few other benefits like 
-mobile friendly and additional sidebar options. Demo at: https://webpopulous.com/plugins/
+mobile friendly and additional sidebar options. 
 Template:             twentyeleven
 Version:              1.0.1
 Tested up to:         5.9.1
@@ -65,19 +65,11 @@ body.one-column #page{
 	width:         100%;
 	border-bottom: thin solid #ccc;
 }
-
-@media screen and (min-width: 900px){
-	#page{
-		max-width: 90%;	
-	}
-	.primary-single #secondary aside.widget #searchform input{
-		max-width:320px;
-	}
-	body.one-column #page{
-		max-width: 980px;
-		width:     90%;
-		font-size: initial;
-	}
+.page-template-default .entry-content{
+	width: 89%
+}
+.page-template-default.singular .entry-header{
+	width: 73.2%
 }
 #site-description{
 	margin-bottom: .5em;
@@ -99,6 +91,10 @@ body.one-column #page{
 	position:       relative;
 	height:         2.1em;
 	z-index:        9998;
+}
+.attachment,
+.image-attachment div.attachment{
+	margin: 0 auto;
 }
 /* =Menu
 -------------------------------------------------------------- */
@@ -268,11 +264,23 @@ body.one-column #page{
 	background: #052;
 	box-shadow: 0 0 2px 2px rgba(204,204,204,0.85);
 }
-
 #respond p {
     margin: 1px 0;
 }
 
+@media screen and (min-width: 900px){
+	#page{
+		max-width: 90%;	
+	}
+	.primary-single #secondary aside.widget #searchform input{
+		max-width:320px;
+	}
+	body.one-column #page{
+		max-width: 980px;
+		width:     90%;
+		font-size: initial;
+	}
+}
 /* =Print
 ----------------------------------------------- */
 
