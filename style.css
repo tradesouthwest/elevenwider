@@ -64,12 +64,19 @@ body.one-column #page{
 	float:         left;
 	width:         100%;
 	border-bottom: thin solid #ccc;
-}
+} /*
+.page-template-default #primary #content,
+.singular #primary #content {
+	margin: 0 4.4%;
+} 
 .page-template-default .entry-content{
-	width: 89%
-}
-.page-template-default.singular .entry-header{
-	width: 73.2%
+	width: inherit
+} */
+.home .entry-content{
+	width: 71.4%
+} 
+.singular .entry-header{
+	padding-left: 5.24rem
 }
 #site-description{
 	margin-bottom: .5em;
@@ -221,7 +228,9 @@ body.one-column #page{
 	box-shadow:    inset 0 .5px 3px rgba(194,194,194,0.95);
 	box-sizing:    border-box;
 }
-
+.entry-content h1{
+	font-size: 182.5%
+}
 /* =Pages
 ----------------------------------------------- */
 .page-template-nobanner-page .entry-content{
