@@ -75,9 +75,6 @@ body.one-column #page{
 .home .entry-content{
 	width: 71.4%
 } 
-.singular .entry-header{
-	padding-left: 5.24rem
-}
 #site-description{
 	margin-bottom: .5em;
 }
@@ -102,6 +99,17 @@ body.one-column #page{
 .attachment,
 .image-attachment div.attachment{
 	margin: 0 auto;
+}
+.singular .entry-title{
+	padding-left: 2em
+}
+.singular .entry-header, .singular .entry-content, .singular footer.entry-meta, .singular #comments-title{
+	margin: 0 auto;
+	width: 90.674%;
+}
+.singular #author-info{
+	margin: auto;
+	padding: 20px;
 }
 /* =Menu
 -------------------------------------------------------------- */

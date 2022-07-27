@@ -23,3 +23,5 @@ This child theme adds background for active menu items; dropdown icon for menu i
 
 1.0.1
 - initial release
+1.0.2
+- some style updates
